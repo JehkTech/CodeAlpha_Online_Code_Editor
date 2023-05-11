@@ -1,0 +1,215 @@
+body {
+    width: 80%;
+    align-content: center;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #fceddf;
+    background: radial-gradient(rgba(253, 241, 240));
+}
+
+#editor-box {
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 80px;
+    align-content: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin: auto auto 2px auto;
+    display: block;
+    cursor: pointer;
+    width: 605px;
+    padding: 20px;
+    animation-delay: 3s;
+}
+
+.gradient-text {
+    background-color: #ca4246;
+    background-image: linear-gradient(
+        45deg,
+        #476098 16.666%,
+        #e16541 16.666%,
+        #e16541 33.333%, 
+        #f18F43 33.333%, 
+        #f18F43 50%, 
+        #8b9862 50%, 
+        #8b9862 66.666%, 
+        #476098 66.666%, 
+        #58d2e7 83.333%, 
+        #e16541 16.666%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow-text-simple-animation-rev 3s ease forwards 2;
+}
+
+.gradient-text:hover {
+    animation: rainbow-text-simple-animation 2.5s ease-in forwards;
+}
+  
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+textarea {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+#topbar {
+    margin: auto;
+    padding: 5px;
+}
+
+#copy-code {
+    
+    position: relative;
+    display: block;
+}
+
+#language-selector {
+    cursor: pointer;
+    display: block;
+    margin: auto 10px auto auto;
+    border-color: #111111;
+    width: auto;
+    font-size: 20px;
+    height: fit-content;
+    position: relative;
+    float: right;
+    padding: 2px;
+    text-align: center;
+}
+
+#language-select {
+    border-radius: 25px;
+    background: linear-gradient(to bottom right, rgb(138, 43, 226, 0.6), rgba(60, 231, 231));
+    color: rgba(41, 39, 39, 0.9);
+    cursor: pointer;
+}
+
+#language-select:hover {
+    color: #fdf1f0;
+    background: linear-gradient(to bottom left, rgb(138, 43, 226, 0.6), rgba(60, 231, 231));
+}
+
+#language-select, option {
+    background: rgb(114, 111, 111);
+    color: snow;
+    border: rgba(114, 111, 111);
+    font-size: 15px;
+    padding: 5px;
+}
+
+#language-select, option:hover {
+    background: linear-gradient(to bottom left, rgb(138, 43, 226, 0.6), rgba(60, 231, 231));
+    color: #111111;
+    cursor: pointer;
+}
+
+#theme-selector {
+    padding: 2px;
+    cursor: pointer;
+    display: block;
+    border-color: #111111;
+    width: auto;
+    font-size: 20px;
+    height: fit-content;
+    position: relative;
+    float: left;
+    margin: auto auto auto 23%;
+    text-align: center;
+}
+
+#theme-select {
+    padding: 5px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom right, rgb(138, 43, 226, 0.6), rgba(60, 231, 231));
+    color: rgba(41, 39, 39, 0.9);
+    cursor: pointer;
+}
+
+#copy-code {
+    padding: 2px;
+    cursor: pointer;
+    display: block;
+    border-color: #111111;
+    width: auto;
+    font-size: 21px;
+    height: fit-content;
+    position: relative;
+    float: left;
+    margin: auto 25px auto auto;
+    text-align: center;
+}
+
+#copy-btn {
+    font-size: 12px;
+    background: linear-gradient(to bottom right, rgb(138, 43, 226, 0.6), rgba(60, 231, 231));
+    padding: 5px;
+    color: rgba(41, 39, 39, 0.9);
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    width: auto;
+    height: fit-content;
+    border: none;
+}
+
+#copy-btn:hover {
+    background: linear-gradient(to bottom left, rgb(138, 43, 226, 0.6), rgba(60, 231, 231));
+    color: #ffffff;
+}
+  
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px */
+    /* For example: smartphones */
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 1200px) {
+    /* Styles for screens between 600px and 1200px */
+    /* For example: tablets and small laptops */
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    /* Styles for screens larger than 1200px */
+    /* For example: desktops and large laptops */
+  }
+  
+  img, video {
+    max-width: 80%;
+    height: auto;
+  }
+  

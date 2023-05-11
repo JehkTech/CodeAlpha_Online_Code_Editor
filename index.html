@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/theme/ayu-dark.css">
+    <link rel="stylesheet" href="codemirror/theme/cobalt.css">
+    <link rel="stylesheet" href="codemirror/theme/dracula.css">
+    <link rel="stylesheet" href="codemirror/theme/material-darker.css">
+    <link rel="stylesheet" href="codemirror/theme/material-ocean.css">
+    <link rel="stylesheet" href="codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="codemirror/theme/solarized.css">
+    <link rel="stylesheet" href="codemirror/theme/tomorrow-night-bright.css">
+    <link rel="stylesheet" href="codemirror/theme/twilight.css">
+    <link rel="stylesheet" href="codemirror/addon/edit/closetag.js">
+    <link rel="stylesheet" href="codemirror/addon/edit/closebrackets.js">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <script src="codemirror/mode/python/python.js"></script>
+    <script src="codemirror/mode/shell/shell.js"></script>
+    <script src="codemirror/mode/swift/swift.js"></script>
+    <script src="codemirror/mode/vbscript/vbscript.js"></script>
+    <script src="codemirror/mode/xml/xml.js"></script>
+    <script src="codemirror/mode/sql/sql.js"></script>
+    <script src="codemirror/addon/edit/closebrackets.js"></script>
+    <script src="codemirror/addon/edit/closetag.js"></script>
+    <script src="codemirror/addon/edit/trailingspace.js"></script>
+    <script src="codemirror/addon/edit/matchbrackets.js"></script>
+    
+</head>
+<body>
+    <div id="container">
+            <div id="editor-box">
+                <h1 class="animate__animated animate__wobble">
+                    <span class="gradient-text">Code Editor</span>
+                </h1>
+                <div id="topbar">
+
+                    <textarea id="editor"><p>This is CodeAplha!</p></textarea>
+
+
+                    <div id="copy-code">
+                        <p>Copy Code</p>
+                        <button id="copy-btn" onclick="copyToClipboard()">
+                            <span class="clipboard-icon">&#128203;</span> COPY TEXT
+                        </button>
+                    </div>
+
+                    <div id="theme-selector">
+                        <p>Select Theme</p>
+                        <select id="theme-select" onchange="changeTheme()">
+                            <option value="ayu-dark">Ayu Dark</option>
+                            <option value="cobalt">Cobalt</option>
+                            <option value="dracula" selected>Dracula</option>
+                            <option value="material-darker">Material Darker</option>
+                            <option value="material-ocean">Material Ocean</option>
+                            <option value="monokai">Monokai</option>
+                            <option value="solarized">Solarized</option>
+                            <option value="tomorrow-night-bright">Tomorrow Night Bright</option>
+                            <option value="twilight">Twilight</option>
+                        </select>
+                    </div>
+
+                    <div id="language-selector">
+                        <p>Select Language</p>
+                        <select id="language-select" onchange="changeLanguage()">
+                            <option value="xml">HTML</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="shell">Shell</option>
+                            <option value="swift">Swift</option>
+                            <option value="sql">SQL</option>
+                            <option value="vbscript">VBScript</option>
+                        </select>
+                    </div>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+    </div>
+    
+<script src="app.js"></script>    
+</body>
+</html>
